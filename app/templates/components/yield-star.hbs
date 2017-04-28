@@ -1,0 +1,20 @@
+<button onclick={{perform parentTask}}>child task</button>
+<ul>
+  {{#each childTaskLog as |entry|}}
+    <li>{{entry}}</li>
+  {{/each}}
+</ul>
+
+<button onclick={{perform yieldStarTask}}>yield*</button>
+<ul>
+  {{#each yieldStarLog as |entry|}}
+    <li>{{entry}}</li>
+  {{/each}}
+</ul>
+
+<button onclick={{perform yieldTask}}>yield</button>
+<ul>
+  {{#each yieldLog as |entry|}}
+    <li>{{entry}}</li>
+  {{/each}}
+</ul>
